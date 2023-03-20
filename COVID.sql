@@ -1,4 +1,4 @@
-  --Looking at Total Cases vs Total Deaths
+  --Looking at Total Cases vs Total Deaths--
 SELECT
   Location,
   Date,
@@ -12,8 +12,9 @@ WHERE
 ORDER BY
   1,
   2
-  -- looking at total cases VS the population
-  -- Shows what percentage of population got Covid
+  
+  -- looking at total cases VS the population--
+  
 SELECT
   Location,
   Date,
@@ -27,7 +28,9 @@ WHERE
 ORDER BY
   1,
   2
-  -- Shows what percentage of population got Covid
+  
+  -- Shows what percentage of population got Covid--
+  
 SELECT
   Location,
   Date,
@@ -41,7 +44,7 @@ WHERE
 ORDER BY
   1,
   2
-  --Looking at Countries with Highest Infection Rate compared to Population
+  --Looking at Countries with Highest Infection Rate compared to Population--
 SELECT
   Location,
   population,
@@ -81,7 +84,7 @@ GROUP BY
 ORDER BY
   TotalDeathCount DESC
   
-  -- Let's Break things down by continent
+  --Breakdown by continent--
   
 SELECT
   location,
@@ -95,7 +98,7 @@ GROUP BY
 ORDER BY
   TotalDeathCount DESC ;
   
-  -- Global Numbers
+  -- Global Numbers--
   
 SELECT
   date,
@@ -112,7 +115,8 @@ ORDER BY
   1,
   2;
   
-  --Looking at Total Population vs Vaccinations
+  --Looking at Total Population vs Vaccinations--
+  
 SELECT
   dea.continent,
   dea.location,
@@ -133,9 +137,9 @@ ORDER BY
   2,
   3
   
-  --Looking at Total Population vs Vaccinations
-  --Percent of Population Vaccinated
-  -- USE CTE
+  --Looking at Total Population vs Vaccinations--
+  --Percent of Population Vaccinated--
+ 
   
 WITH
   PopvsVac AS (
@@ -163,7 +167,7 @@ SELECT
 FROM
   PopvsVac
   
---Temp 
+--Temp Table--
   
  DROP TABLE IF exists 
  primer-projecto-372413.COVID_Project.PERCENTPOPULATIONVACCINATED
